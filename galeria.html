@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - IEPJ</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo-area">
+        <img src="img/logo.png" alt="Logo IEPJ">
+        <div>
+            <h2>IEPJ</h2>
+            <span>Iglesia Evangélica Pentecostal</span>
+        </div>
+    </a>
+    <nav class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="ministerio.html">Ministerios</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="galeria.html" class="activo">Galería</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="login.html" class="btn-login"><i class="fa-solid fa-user"></i> Ingresar</a>
+    </nav>
+    <button class="menu-btn" onclick="abrirMenu()" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+</header>
+
+<section class="hero hero-interna">
+    <div class="hero-contenido">
+        <span class="etiqueta">Nuestra comunidad</span>
+        <h1>Galería</h1>
+        <p>Momentos de fe, servicio y comunión en nuestra iglesia.</p>
+    </div>
+</section>
+
+<section class="galeria">
+    <div class="galeria-pagina" id="galeriaFotos">
+        <figure><img src="img/iglesia.jpg" alt="Nuestra iglesia" loading="lazy"><figcaption>Nuestra iglesia</figcaption></figure>
+        <figure><img src="img/evento1.jpg" alt="Evento de la iglesia" loading="lazy"><figcaption>Evento de la iglesia</figcaption></figure>
+        <figure><img src="img/evento2.jpg" alt="Actividad cristiana" loading="lazy"><figcaption>Actividad cristiana</figcaption></figure>
+        <figure><img src="img/evento3.jpg" alt="Reunión especial" loading="lazy"><figcaption>Reunión especial</figcaption></figure>
+        <figure><img src="img/ninos.jpg" alt="Ministerio infantil" loading="lazy"><figcaption>Ministerio infantil</figcaption></figure>
+        <figure><img src="img/jovenes.jpg" alt="Ministerio de jóvenes" loading="lazy"><figcaption>Ministerio de jóvenes</figcaption></figure>
+        <figure><img src="img/damas.jpg" alt="Ministerio de damas" loading="lazy"><figcaption>Ministerio de damas</figcaption></figure>
+        <figure><img src="img/caballeros.jpg" alt="Ministerio de caballeros" loading="lazy"><figcaption>Ministerio de caballeros</figcaption></figure>
+        <figure><img src="img/alabanza.jpg" alt="Ministerio de alabanza" loading="lazy"><figcaption>Ministerio de alabanza</figcaption></figure>
+        <figure><img src="img/evangelismo.jpg" alt="Evangelismo" loading="lazy"><figcaption>Evangelismo</figcaption></figure>
+        <figure><img src="img/oracion.jpg" alt="Ministerio de oración" loading="lazy"><figcaption>Ministerio de oración</figcaption></figure>
+        <figure><img src="img/escuela-dominical.jpg" alt="Escuela dominical" loading="lazy"><figcaption>Escuela dominical</figcaption></figure>
+    </div>
+</section>
+
+<div class="visor" id="visor" aria-hidden="true">
+    <button class="visor-cerrar" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+    <img src="" alt="">
+</div>
+
+<footer>
+    <div class="footer-contenido">
+        
+        <div class="footer-redes">
+            <h3>Síguenos</h3>
+            <div>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">© 2026 IEPJ - Todos los derechos reservados.</div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

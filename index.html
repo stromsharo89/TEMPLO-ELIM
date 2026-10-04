@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEPJ - Iglesia Evangélica Pentecostal de Jesucristo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo-area">
+        <img src="img/logo iepj.png" alt="Logo IEPJ">
+        <div>
+            <h2>RICARDO PALMA </h2>
+            <span>Iglesia Evangélica Pentecostal</span>
+        </div>
+    </a>
+    <nav class="navbar">
+        <a href="index.html" class="activo">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="ministerios.html">Ministerios</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="galeria.html">Galería</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="login.html" class="btn-login"><i class="fa-solid fa-user"></i> Ingresar</a>
+    </nav>
+    <button class="menu-btn" onclick="abrirMenu()" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+</header>
+
+<section class="hero">
+    <div class="hero-contenido">
+        <span class="etiqueta"><i class="fa-solid fa-cross"></i> Bienvenidos</span>
+        <h1>Un lugar para <span>crecer en Cristo</span></h1>
+        <p>Somos una familia de fe que busca conocer, amar y compartir el mensaje de Jesucristo.</p>
+        <div class="hero-botones">
+            <a href="nosotros.html" class="btn-principal">Conócenos <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="eventos.html" class="btn-secundario">Ver eventos</a>
+        </div>
+    </div>
+</section>
+
+<section class="bienvenida">
+    <div class="imagen-bienvenida">
+        <img src="img/iglesia.jpg" alt="Nuestra iglesia">
+        <div class="tarjeta-versiculo">
+            <i class="fa-solid fa-book-bible"></i>
+            <p>"Porque donde están dos o tres congregados en mi nombre, allí estoy yo en medio de ellos."</p>
+            <strong>Mateo 18:20</strong>
+        </div>
+    </div>
+    <div class="texto-bienvenida">
+        <span class="subtitulo">Nuestra familia</span>
+        <h2>Bienvenidos a nuestra iglesia</h2>
+        <p>Somos una comunidad cristiana dedicada a compartir el amor de Dios y fortalecer la fe de cada persona.</p>
+        <p>Queremos que cada familia encuentre aquí un espacio para aprender de la Palabra de Dios, servir y crecer espiritualmente.</p>
+        <a href="nosotros.html" class="btn-principal">Conoce nuestra historia</a>
+    </div>
+</section>
+
+<section class="servicios">
+    <div class="titulo-seccion">
+        <span>Adoración y comunidad</span>
+        <h2>Nuestros servicios</h2>
+        <p>Te esperamos para compartir juntos momentos de fe y comunión.</p>
+    </div>
+    <div class="servicios-grid">
+        <div class="servicio-card">
+            <div class="icono"><i class="fa-solid fa-church"></i></div>
+            <h3>Culto general</h3>
+            <p>Un tiempo especial para adorar, escuchar la Palabra y compartir.</p>
+            <strong>Martes - 6:30 PM a 8:10 PM</strong>
+            <p></p>
+            <strong>jueves - 6:30 PM a 8:10 PM</strong>
+            <p></p>
+            <strong>Domingos - 6:30 PM a 8:10 PM</strong>
+        </div>
+        <div class="servicio-card">
+            <div class="icono"><i class="fa-solid fa-child"></i></div>
+            <h3>Escuela dominical</h3>
+            <p>Enseñanza bíblica para nuestros niños y jóvenes.</p>
+            <strong>Domingos</strong>
+            <p></p>
+            <strong>10:30 AM a 1:00 PM</strong>
+        </div>
+        <div class="servicio-card">
+            <div class="icono"><i class="fa-solid fa-hands-praying"></i></div>
+            <h3>Oración</h3>
+            <p>Nos reunimos para buscar a Dios y orar unos por otros.</p>
+            <strong>Todos los Dias</strong>
+        </div>
+        <div class="servicio-card">
+            <div class="icono"><i class="fa-solid fa-users"></i></div>
+            <h3>Culto De Jóvenes</h3>
+            <p>Un espacio para aprender, compartir y servir a Dios.</p>
+            <strong>Sabados</strong>
+            <p></p>
+            <strong>6:30 PM A 8:10 PM</strong>
+        </div>
+    </div>
+</section>
+
+<section class="ministerios" id="ministerios">
+    <div class="titulo-seccion">
+        <span>Nuestra comunidad</span>
+        <h2>Ministerios</h2>
+    </div>
+    <div class="ministerios-grid">
+        <div class="ministerio-card">
+            <div class="ministerio-icon"><i class="fa-solid fa-child-reaching"></i></div>
+            <h3>Niños</h3>
+            <p>Enseñamos la Palabra de Dios de una manera especial para los pequeños.</p>
+        </div>
+        <div class="ministerio-card">
+            <div class="ministerio-icon"><i class="fa-solid fa-person"></i></div>
+            <h3>Jóvenes</h3>
+            <p>Formamos jóvenes comprometidos con Cristo y con su comunidad.</p>
+        </div>
+        <div class="ministerio-card">
+            <div class="ministerio-icon"><i class="fa-solid fa-people-group"></i></div>
+            <h3>Familias</h3>
+            <p>Fortalecemos los hogares mediante la fe y el amor de Dios.</p>
+        </div>
+        <div class="ministerio-card">
+            <div class="ministerio-icon"><i class="fa-solid fa-heart"></i></div>
+            <h3>Evangelismo</h3>
+            <p>Compartimos el mensaje de esperanza con nuestra comunidad.</p>
+        </div>
+    </div>
+</section>
+
+<section class="versiculo">
+    <div class="versiculo-contenido">
+        <i class="fa-solid fa-quote-left"></i>
+        <h2>"Todo lo puedo en Cristo que me fortalece."</h2>
+        <p>Filipenses 4:13</p>
+    </div>
+</section>
+
+<section class="eventos" id="eventos">
+    <div class="titulo-seccion">
+        <span>Participa con nosotros</span>
+        <h2>Próximos eventos</h2>
+        <p>Mantente informado sobre nuestras próximas actividades.</p>
+    </div>
+    <div class="eventos-grid">
+        <article class="evento-card">
+            <img src="img/evento1.jpg" alt="Evento de la iglesia">
+            <div class="evento-info">
+                <span class="fecha"><i class="fa-regular fa-calendar"></i> Próximamente</span>
+                <h3>Actividad de la iglesia</h3>
+                <p>Próximamente podrás encontrar aquí toda la información.</p>
+                <a href="eventos.html">Ver detalles →</a>
+            </div>
+        </article>
+        <article class="evento-card">
+            <img src="img/evento2.jpg" alt="Actividad cristiana">
+            <div class="evento-info">
+                <span class="fecha"><i class="fa-regular fa-calendar"></i> Próximamente</span>
+                <h3>Escuela dominical</h3>
+                <p>Actividades especiales para niños y familias.</p>
+                <a href="eventos.html">Ver detalles →</a>
+            </div>
+        </article>
+        <article class="evento-card">
+            <img src="img/evento3.jpg" alt="Reunión">
+            <div class="evento-info">
+                <span class="fecha"><i class="fa-regular fa-calendar"></i> Próximamente</span>
+                <h3>Reunión especial</h3>
+                <p>Mantente atento a nuestras próximas actividades.</p>
+                <a href="eventos.html">Ver detalles →</a>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="galeria" id="galeria">
+    <div class="titulo-seccion">
+        <span>Conoce nuestra comunidad</span>
+        <h2>Nuestra galería</h2>
+    </div>
+    <div class="galeria-grid">
+        <img src="img/iglesia.jpg" alt="Iglesia">
+        <img src="img/evento1.jpg" alt="Evento">
+        <img src="img/evento2.jpg" alt="Actividad">
+        <img src="img/evento3.jpg" alt="Reunión">
+        <a href="galeria.html" class="galeria-mas">
+            <i class="fa-solid fa-images"></i>
+            <strong>Ir a la galería</strong>
+            <span>Ver todas las fotos</span>
+        </a>
+    </div>
+</section>
+
+
+<footer>
+    <div class="footer-contenido">
+        
+       
+        <div class="footer-redes">
+            <h3>Síguenos</h3>
+            <div>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">© 2026 IEPJ - Todos los derechos reservados.</div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

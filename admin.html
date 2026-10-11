@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración | TEMPLO ELIM</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <main class="admin-contenedor">
+        <header class="admin-cabecera">
+            <div>
+                <h1>Panel de administración</h1>
+                <p>Gestiona los eventos y las fotografías del sitio.</p>
+            </div>
+            <button id="cerrarSesion" class="boton peligro" type="button">Cerrar sesión</button>
+        </header>
+
+        <p id="mensajeAdmin" class="mensaje" role="status" aria-live="polite"></p>
+
+        <section class="admin-panel">
+            <h2>Crear o editar evento</h2>
+            <form id="formEvento">
+                <input type="hidden" id="eventoId">
+                <input type="hidden" id="rutaImagenEvento">
+
+                <label for="tituloEvento">Título del evento</label>
+                <input id="tituloEvento" maxlength="150" required>
+
+                <label for="fechaEvento">Fecha</label>
+                <input id="fechaEvento" type="date">
+
+                <label for="descripcionEvento">Descripción</label>
+                <textarea id="descripcionEvento" rows="4" maxlength="3000"></textarea>
+
+                <label for="imagenEvento">Fotografía del evento (máx. 5 MB)</label>
+                <input id="imagenEvento" type="file" accept="image/*">
+
+                <button type="submit" class="boton">Guardar evento</button>
+                <button type="reset" class="boton claro"
+                        onclick="document.getElementById('eventoId').value='';document.getElementById('rutaImagenEvento').value=''">Limpiar formulario</button>
+            </form>
+
+            <h2 style="margin-top:32px">Eventos registrados</h2>
+            <div id="listaEventos">Cargando...</div>
+        </section>
+
+        <section class="admin-panel">
+            <h2>Agregar fotografía a la galería</h2>
+            <form id="formFoto">
+                <label for="tituloFoto">Título de la fotografía</label>
+                <input id="tituloFoto" maxlength="150">
+
+                <label for="archivoFoto">Seleccionar fotografía (máx. 5 MB)</label>
+                <input id="archivoFoto" type="file" accept="image/*" required>
+
+                <button type="submit" class="boton">Subir fotografía</button>
+            </form>
+
+            <h2 style="margin-top:32px">Fotografías publicadas</h2>
+            <div id="listaFotos">Cargando...</div>
+        </section>
+
+        <p><a href="index.html">Volver a la página pública</a></p>
+    </main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

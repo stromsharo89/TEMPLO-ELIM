@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galería de fotografías de nuestra iglesia.">
+    <title>Galería | TEMPLO ELIM</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo-area">
+        <img src="img/logo iepj.png" alt="Logo IEPJ">
+        <div>
+            <h2>RICARDO PALMA</h2>
+            <span>Iglesia Evangélica Pentecostal</span>
+        </div>
+    </a>
+    <nav class="navbar" id="menuPrincipal">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="ministerio.html">Ministerios</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="galeria.html" class="activo" aria-current="page">Galería</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="login.html" class="btn-login"><i class="fa-solid fa-user"></i> Ingresar</a>
+    </nav>
+    <button class="menu-btn" onclick="abrirMenu()" aria-label="Abrir menú" aria-controls="menuPrincipal">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+</header>
+
+<section class="titulo-pagina">
+    <div>
+        <span>Conoce nuestra comunidad</span>
+        <h1>Galería de nuestra iglesia</h1>
+        <p>Momentos especiales de nuestras actividades y reuniones.</p>
+    </div>
+</section>
+
+<main class="pagina">
+    <div class="foto-grid" id="contenedorGaleria"><p class="aviso">Cargando fotografías...</p></div>
+</main>
+
+<footer>
+    <div class="footer-contenido">
+        <div class="footer-marca">
+            <h3>Iglesia Evangélica Pentecostal de Jesucristo</h3>
+            <p>Una familia de fe que busca conocer, amar y compartir el mensaje de Jesucristo.</p>
+        </div>
+        <div class="footer-datos">
+            <h3>Contacto</h3>
+            <p><i class="fa-solid fa-location-dot"></i>Ricardo Palma #1108</p>
+            <p><i class="fa-solid fa-phone"></i>+51 964 402 267</p>
+            <p><i class="fa-solid fa-envelope"></i>TemploElim@gmail.com</p>
+        </div>
+        <div class="footer-redes">
+            <h3>Síguenos</h3>
+            <div>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">© 2026 IEPJ - Todos los derechos reservados.</div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js"></script>
+<script src="js/galeria.js"></script>
+</body>
+</html>
